@@ -351,11 +351,8 @@ function addGift(gift) {
     const blur = document.createElement('div');
     blur.className = 'blur';
     blur.style.backgroundImage = `url(${gift.photo_url || 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="280" height="280"%3E%3Crect fill="%23252525" width="280" height="280"/%3E%3Ctext x="50%25" y="50%25" text-anchor="middle" dy=".3em" fill="%23666" font-family="Arial" font-size="14"%3EНет изображения%3C/text%3E%3C/svg%3E'})`;
-    const circleLight = document.createElement('div');
-    circleLight.className = 'circleLight';
     card.appendChild(bg);
     card.appendChild(blur);
-    card.appendChild(circleLight);
 
     const imageWrapper = document.createElement('div');
     imageWrapper.className = 'gift-image-wrapper';
@@ -369,31 +366,6 @@ function addGift(gift) {
         blur.style.backgroundImage = `url(${this.src})`;
     };
     imageWrapper.appendChild(image);
-
-    let mouse = { X: 0, Y: 0, CX: 0, CY: 0 };
-    let block = { X: mouse.X, Y: mouse.Y, CX: mouse.CX, CY: mouse.CY };
-    card.addEventListener('mousemove', function(e) {
-        const rect = card.getBoundingClientRect();
-        mouse.X = (e.pageX - rect.left) - card.offsetWidth / 2;
-        mouse.Y = (e.pageY - rect.top) - card.offsetHeight / 2;
-    });
-    card.addEventListener('mouseleave', function() {
-        mouse.X = mouse.CX;
-        mouse.Y = mouse.CY;
-    });
-    const animateCard = setInterval(function() {
-        block.CY += (mouse.Y - block.CY) / 12;
-        block.CX += (mouse.X - block.CX) / 12;
-        circleLight.style.background = `radial-gradient(circle at ${mouse.X + card.offsetWidth / 2}px ${mouse.Y + card.offsetHeight / 2}px, rgba(255, 255, 255, 0.4), transparent)`;
-        card.style.transform = `scale(1.03) translate(${block.CX * 0.05}px, ${block.CY * 0.05}px) rotateX(${block.CY * 0.05}deg) rotateY(${block.CX * 0.05}deg)`;
-    }, 20);
-    const observer = new MutationObserver(() => {
-        if (!document.body.contains(card)) {
-            clearInterval(animateCard);
-            observer.disconnect();
-        }
-    });
-    observer.observe(document.body, { childList: true, subtree: true });
 
     const info = document.createElement('div');
     info.className = 'gift-info';
@@ -467,15 +439,10 @@ function addGift(gift) {
     const allCards = giftsGrid.querySelectorAll('.gift-card');
     const delay = Math.min(Array.from(allCards).indexOf(card) * 60, 400);
     setTimeout(() => {
-        card.style.transition = 'all 0.9s cubic-bezier(0.34, 1.56, 0.64, 1)';
+        card.style.transition = 'all 0.5s ease';
         card.style.opacity = '1';
-        card.style.transform = 'translateY(0) scale(1)';
+        card.style.transform = '';
         card.style.filter = 'blur(0)';
-        setTimeout(() => {
-            card.style.transition = 'transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)';
-            card.style.transform = 'translateY(-5px) scale(1.02)';
-            setTimeout(() => { card.style.transform = ''; }, 300);
-        }, 100);
     }, 10 + delay);
 }
 
