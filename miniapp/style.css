@@ -3077,4 +3077,59 @@ svg.liquid-filters {
         align-items: flex-start;
         gap: 12px;
     }
- }
+}
+
+/* Mini App / узкий экран: фильтры всегда видны, горизонтальный скролл */
+@media (max-width: 900px) {
+    .top-header {
+        width: min(1200px, calc(100% - 24px));
+        padding: 10px 12px;
+    }
+    
+    .header-content {
+        flex-wrap: wrap;
+        gap: 10px;
+        min-height: auto;
+    }
+    
+    .header-controls-left {
+        order: 1;
+        flex: 1 1 100%;
+        min-width: 0;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 4px;
+    }
+    
+    .header-controls-left::-webkit-scrollbar {
+        height: 4px;
+    }
+    
+    .filters-bar {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 8px;
+        min-width: min-content;
+        padding: 6px 10px;
+    }
+    
+    .header-controls-center {
+        order: 2;
+        flex: 0 0 auto;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .filter-btn-text {
+        display: inline;
+    }
+    
+    .price-filter-bar {
+        flex-shrink: 0;
+    }
+    
+    .price-filter-bar .range-inputs {
+        min-width: 80px;
+    }
+}
