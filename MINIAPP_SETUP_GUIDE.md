@@ -40,6 +40,18 @@
 После этого репозиторий на GitHub будет заполнен. Дальше — **Часть 1** (включить Pages и задеплоить Mini App).  
 Адрес Mini App будет: `https://nertexqq.github.io/miniapp-pars/` (если логин `nertexqq`, репо `miniapp-pars`).
 
+**Если Git просит указать, кто ты (`Author identity unknown`):**
+
+Перед первым коммитом один раз настрой имя и почту (подставь свои данные; почта может быть та же, что на GitHub):
+
+```bash
+git config --global user.email "твоя@почта.com"
+git config --global user.name "Твоё Имя"
+```
+
+Можно указать ник с GitHub: `git config --global user.name "nertexqq"`.  
+После этого снова выполни `git add .` и `git commit -m "first commit"`.
+
 **Если при `git push -u origin main` вылезла ошибка `src refspec main does not match any`:**
 
 - Скорее всего, в репо ещё нет ни одного коммита (ветка `main` не создалась). Сделай так:

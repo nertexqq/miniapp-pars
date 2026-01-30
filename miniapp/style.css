@@ -2968,6 +2968,36 @@ svg.liquid-filters {
     text-align: center;
 }
 
+.selector-empty-state {
+    padding: 16px;
+    margin-top: 12px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.selector-empty-state.hidden {
+    display: none;
+}
+.selector-empty-text {
+    margin: 0 0 8px;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+.selector-empty-hint {
+    margin: 0 0 12px;
+    font-size: 13px;
+    color: var(--text-tertiary);
+}
+.selector-empty-hint code {
+    font-size: 12px;
+    background: rgba(255,255,255,0.08);
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+.selector-empty-state .btn {
+    margin-top: 4px;
+}
+
 .selector-actions {
     display: flex;
     gap: 12px;

@@ -118,6 +118,7 @@
       "Black Diamond (2.5%)",
       "Black Gold",
       "Blonde",
+      "Blonde (2%)",
       "Bollywood",
       "Bow Wizzle",
       "Bow Wizzle (2%)",
@@ -199,6 +200,7 @@
       "Astro Peach",
       "Baby Carrot",
       "Banana",
+      "Banana (2.5%)",
       "Black Wing",
       "Cardboard",
       "Checkered",
@@ -206,6 +208,7 @@
       "Clever Bird",
       "Doomsday",
       "Fireworks",
+      "Fireworks (3%)",
       "First Step",
       "Fishing Cat",
       "Flower Power",
@@ -393,6 +396,7 @@
       "Straw Hat",
       "Super Pixel",
       "TON Holder",
+      "TON Holder (0.4%)",
       "Tennis Set",
       "Tortilla Chips",
       "Toy Bucket",
@@ -480,6 +484,7 @@
       "Emperor",
       "Extra Spicy",
       "Fresh Berry",
+      "Fresh Berry (3%)",
       "Fried Chicken",
       "Funky Disco",
       "Ghost Biters",
@@ -506,8 +511,10 @@
       "TNT Stick",
       "Ton Cone",
       "Trio Scoop",
+      "Trio Scoop (3%)",
       "Utya Pop",
       "Vice Dream",
+      "Vice Dream (3%)",
       "Watermelon",
       "Whisker",
       "Whisker (2.5%)"
@@ -577,6 +584,7 @@
       "Christmas",
       "Cloud Nine",
       "Cream Scream",
+      "Cream Scream (2%)",
       "Dracula",
       "Fantastic Four",
       "Fast Charge",
@@ -696,6 +704,7 @@
     ],
     "Eternal Candle": [
       "Carnation",
+      "Carnation (1.5%)",
       "Coastal Cove",
       "Ephemeral",
       "Jasmine",
@@ -812,6 +821,7 @@
       "Starlit Silver",
       "Starry Night",
       "Stellar Grace",
+      "Stellar Grace (3%)",
       "Titanium",
       "Twilight Wish"
     ],
@@ -1089,6 +1099,7 @@
       "Grandma",
       "Gunk Fight",
       "Heavy Rain",
+      "Heavy Rain (2.5%)",
       "Hermes",
       "Intellect",
       "Leopard",
@@ -1134,6 +1145,7 @@
       "Aquamarine",
       "Berry Meadow",
       "Blueberry",
+      "Chocolate (2%)",
       "Cold Night",
       "Cotton Candy (2%)",
       "Dragee",
@@ -1171,6 +1183,7 @@
       "Baby Yoda",
       "Batwing",
       "Billiards",
+      "Bordeaux (5%)",
       "Canada",
       "Cupid’s Bow",
       "Eggplants",
@@ -1180,8 +1193,10 @@
       "Football",
       "Ladybug",
       "Mistletoe",
+      "Mistletoe (2.5%)",
       "Mondrian",
       "Sailor Moon",
+      "The Raven",
       "Tortuga",
       "Union Jack",
       "Utyan",
@@ -1198,6 +1213,7 @@
       "Cold Autumn",
       "Cold Limeade",
       "Evergreen",
+      "Frosted Sun (2%)",
       "Golden Tide",
       "Holiday Spirit",
       "Icicle",
@@ -1243,9 +1259,11 @@
       "Gold Night",
       "Golden Lace",
       "Lavender",
+      "Lavender (2.5%)",
       "Lightwoven",
       "Lilac Dream",
       "Luminous",
+      "Luminous (2.5%)",
       "Lunar Veil",
       "Midnight",
       "Miracle",
@@ -1259,6 +1277,7 @@
       "Purple Dunes",
       "Radiance",
       "Rose Gold",
+      "Rose Gold (3%)",
       "Rose Pearl",
       "Royal Green",
       "Ruby Drop",
@@ -1269,8 +1288,10 @@
       "Silver Gold",
       "Stained Glass",
       "Starlace",
+      "Sunny Mosaic (2%)",
       "Sunrise",
       "Sunset Gem",
+      "Sunset Gem (1.5%)",
       "Twilight Rose",
       "Velvet Dusk",
       "Winter"
@@ -1459,6 +1480,7 @@
     ],
     "Love Potion": [
       "Astral Guide",
+      "Beauty Brew",
       "Copper Sulfate",
       "Diamonds",
       "Dragon Soul",
@@ -1508,6 +1530,7 @@
       "Herb Garden (0.8%)",
       "Hulking",
       "Icing Sugar",
+      "Icing Sugar (1.6%)",
       "Johnny Ash (1.5%)",
       "Lebkuchen",
       "Lil Ginger",
@@ -1530,12 +1553,14 @@
       "Shortbread",
       "Silver",
       "Snowman",
+      "Strawberry (1.7%)",
       "Sunspot",
       "Sweetheart",
       "Template",
       "Tied Up",
       "Toffee",
       "Unicorn",
+      "Vanilla",
       "Waffle"
     ],
     "Star Notepad": [
@@ -1563,6 +1588,7 @@
       "Skies Above",
       "Snow White",
       "Springfield",
+      "Starry Night",
       "Sterling",
       "Swatch",
       "Tangerine",
@@ -1693,12 +1719,14 @@
     "Sleigh Bell": [
       "Arctic Igloo",
       "Argentum",
+      "Black Silver (2%)",
       "Bronze",
       "Candy Cane",
       "Candy Cloud",
       "Copper Rose",
       "Darth Vader",
       "Deutschland",
+      "Deutschland (2.5%)",
       "Disco Blast",
       "Dracula",
       "Golden Zebra",
@@ -1739,6 +1767,7 @@
       "Snoop’s Pipe",
       "Soul Plane",
       "Space Wrap",
+      "Space Wrap (2%)",
       "Stargazer",
       "Surprise",
       "Triple Shot",
@@ -1785,6 +1814,8 @@
       "Cash Balance",
       "Cherry",
       "Cold Feet",
+      "Cold Feet (3%)",
+      "Crypto Wallet (0.5%)",
       "Darkvision",
       "Emo Love",
       "Fairy Tale",
@@ -2110,6 +2141,7 @@
       "Golden Boy",
       "Harley Quinn",
       "Harley-Bee",
+      "Hellscape",
       "Holidays",
       "Honk! (0.7%)",
       "Hot Midday (1.5%)",
@@ -2164,6 +2196,7 @@
       "Pink Pixie",
       "Pinstripe",
       "Pyromancy",
+      "Radagast",
       "Sanctuary",
       "Sylvester",
       "Wild Magic",
@@ -2200,6 +2233,7 @@
       "UFC BMF",
       "UFC Classic",
       "UFC Glove Token",
+      "UFC Glove Token (1%)",
       "UFC Legacy",
       "UFC Octagon",
       "UFC World",
@@ -2295,6 +2329,7 @@
       "Infinity Gems",
       "Kawaii Bunny",
       "Kawaii Frog",
+      "Kawaii Frog (1%)",
       "Late Fall",
       "Little Star",
       "Ma Chérie",
@@ -2345,6 +2380,8 @@
       "Pink Flame",
       "Rosemary",
       "Scuba Dive",
+      "Swamp Gas",
+      "Tequila Sunrise",
       "Vitamin C",
       "Yellow Pop (0.8%)"
     ],
@@ -2391,6 +2428,7 @@
     "Hex Pot": [
       "Amortentia",
       "Blue Inferno",
+      "Burned Love",
       "Choco Cloud",
       "Citrus",
       "Coldbrew",
@@ -2511,6 +2549,7 @@
       "Argentum",
       "BMO",
       "Birthday",
+      "Bronze",
       "Bunny Grid",
       "Citrus Ice",
       "Citrus Ice (2%)",
@@ -2578,6 +2617,7 @@
       "Birthday",
       "Black Box",
       "Bluebell",
+      "Candy Bubble",
       "Choco Surprise",
       "Choco Surprise (1.5%)",
       "Copper",
@@ -2608,6 +2648,7 @@
       "Scarlet Gold",
       "Seashore",
       "Seashore (3%)",
+      "Secret Santa (3%)",
       "Shamrock",
       "Shimmer",
       "Shopping",
@@ -2615,6 +2656,7 @@
       "Sunshine"
     ],
     "Vintage Cigar": [
+      "Ashtray (1%)",
       "Blue Hue",
       "Cobalt",
       "Green Gas",
@@ -2693,6 +2735,7 @@
       "Cosmea",
       "Dahlia",
       "Dark Neo",
+      "Fire Bloom",
       "Flameris",
       "Floraven",
       "Gerbera",
@@ -2702,6 +2745,7 @@
       "Meadowlyn",
       "Monsoon",
       "Orchidra",
+      "Party Bloom",
       "Petunia",
       "Plumeria",
       "Red Poppy",
@@ -2845,6 +2889,7 @@
       "Menthol",
       "Mistletoe",
       "New Year",
+      "Pingu",
       "Raspberry",
       "Seafoam",
       "Star Power",
@@ -2901,6 +2946,7 @@
       "Glitchberry (1%)",
       "Gryffindor (1.5%)",
       "Harlequin (1%)",
+      "Infrared",
       "Iridescent",
       "Lady Bites (0.5%)",
       "Lemon Lime",
@@ -3305,7 +3351,8 @@
       "Peony",
       "Poinsettia",
       "Silversage",
-      "Vector"
+      "Vector",
+      "White Rose (3%)"
     ],
     "Scared Cat": [
       "Caramel",
@@ -3578,6 +3625,7 @@
     "Snoop Dogg": [
       "Electric Indigo (1%)",
       "Ivory White (1.2%)",
+      "Pistachio (1.5%)",
       "Steel Grey (1.5%)"
     ],
     "Spring Basket": [
@@ -3604,12 +3652,15 @@
       "French Blue (1.5%)",
       "Hunter Green (1.2%)",
       "Lemongrass (1.5%)",
+      "Light Olive (1.5%)",
       "Malachite (1.5%)",
       "Midnight Blue (1.2%)",
       "Mystic Pearl (1.5%)",
+      "Old Gold (1.5%)",
       "Pacific Cyan (1.5%)",
       "Pistachio (1.5%)",
       "Platinum (1.5%)",
+      "Rifle Green (1.5%)",
       "Satin Gold (1.2%)",
       "Shamrock Green (1.5%)",
       "Tomato (1.2%)"
@@ -3632,6 +3683,7 @@
       "French Violet (1.5%)",
       "Light Olive (1.5%)",
       "Marine Blue (1.2%)",
+      "Mexican Pink (1.5%)",
       "Midnight Blue (1.2%)",
       "Mystic Pearl (1.2%)",
       "Neon Blue (1.5%)",
@@ -3653,7 +3705,8 @@
       "Jade Green (1.5%)"
     ],
     "Cookie Heart": [
-      "Lavender (1.5%)"
+      "Lavender (1.5%)",
+      "Neon Blue (2%)"
     ],
     "Moon Pendant": [
       "Aquamarine (1.2%)",
@@ -3661,10 +3714,12 @@
       "Chestnut (1.2%)",
       "Dark Green (1.2%)",
       "Fandango (1%)",
+      "French Violet (1.5%)",
       "Moonstone (1.2%)"
     ],
     "UFC Strike": [
       "Battleship Grey (1.5%)",
+      "Carrot Juice (1%)",
       "Celtic Blue (1%)",
       "Cyberpunk (1.2%)",
       "Neon Blue (1.2%)",
@@ -3673,8 +3728,10 @@
     ],
     "Ginger Cookie": [
       "Cobalt Blue (2%)",
+      "Ivory White (1.5%)",
       "Lavender (1.5%)",
-      "Pacific Green (1.5%)"
+      "Pacific Green (1.5%)",
+      "Platinum (2%)"
     ],
     "Diamond Ring": [
       "Azure Blue (1.5%)",
@@ -3738,6 +3795,7 @@
     "Whip Cupcake": [
       "Celtic Blue",
       "Gunship Green",
+      "Jade Green (1.2%)",
       "Raspberry (1.5%)",
       "Shamrock Green (1.5%)"
     ],
@@ -3811,12 +3869,14 @@
     "Fresh Socks": [
       "Black (1.5%)",
       "Jade Green (1.5%)",
-      "Midnight Blue (1.5%)"
+      "Midnight Blue (1.5%)",
+      "Navy Blue (1.2%)"
     ],
     "Holiday Drink": [
       "Desert Sand (1%)"
     ],
     "Eternal Candle": [
+      "Chestnut (2%)",
       "Khaki Green (2%)"
     ],
     "Hypno Lollipop": [
@@ -3825,12 +3885,16 @@
     ],
     "Stellar Rocket": [
       "Amber (1.2%)",
+      "Azure Blue (1.5%)",
       "Ivory White (1%)",
       "Marine Blue (1.5%)",
+      "Pine Green (1%)",
+      "Pistachio (1.5%)",
       "Steel Grey (1.5%)"
     ],
     "Snake Box": [
       "Carmine (1.2%)",
+      "Emerald (1.2%)",
       "Strawberry (1%)",
       "Turquoise (1.5%)"
     ],
@@ -3844,6 +3908,7 @@
     ],
     "Money Pot": [
       "Pine Green (1.2%)",
+      "Pistachio (1.5%)",
       "Pure Gold (1%)"
     ],
     "Party Sparkler": [
@@ -3857,7 +3922,9 @@
       "Aquamarine (1.5%)",
       "Camo Green (1.5%)",
       "Copper (1.2%)",
-      "Electric Purple (1.5%)"
+      "Dark Lilac (1.2%)",
+      "Electric Purple (1.5%)",
+      "Feldgrau (1%)"
     ],
     "Homemade Cake": [
       "Battleship Grey (1.5%)",
@@ -3877,10 +3944,13 @@
     ],
     "Snoop Cigar": [
       "English Violet (1.2%)",
+      "Grape (1.5%)",
+      "Gunmetal (1.2%)",
       "Jade Green (1.5%)",
       "Onyx Black (1.2%)"
     ],
     "Santa Hat": [
+      "Coral Red (2%)",
       "Sapphire (1%)",
       "Shamrock Green (2%)"
     ],
@@ -3915,6 +3985,7 @@
     "Winter Wreath": [
       "Burgundy (1.5%)",
       "Carrot Juice (1.2%)",
+      "Copper (1.2%)",
       "Dark Green (1.2%)",
       "Satin Gold (1.5%)"
     ],
@@ -3923,7 +3994,12 @@
     ],
     "Faith Amulet": [
       "Aquamarine (1%)",
+      "Caramel (1.2%)",
+      "Chocolate (1%)",
+      "Fire Engine (1.5%)",
+      "French Violet (1.2%)",
       "Gunship Green (1%)",
+      "Hunter Green (1.5%)",
       "Light Olive (1.2%)"
     ],
     "Bling Binky": [
@@ -3994,13 +4070,25 @@
       "Sky Blue (1%)"
     ],
     "Skull Flower": [
-      "Amber (2%)"
+      "Amber (2%)",
+      "Malachite (2%)"
     ],
     "Swiss Watch": [
       "Steel Grey (1.5%)"
     ],
     "Star Notepad": [
       "Pure Gold (2%)"
+    ],
+    "Vintage Cigar": [
+      "Raspberry (1.5%)"
+    ],
+    "Bow Tie": [
+      "Cobalt Blue (1.2%)",
+      "Deep Cyan (1.2%)"
+    ],
+    "Sleigh Bell": [
+      "Orange (1.5%)",
+      "Turquoise (1.2%)"
     ]
   },
   "gifts": [
@@ -61333,6 +61421,524 @@
       "model": "Goldfinger",
       "backdrop": null,
       "number": "56802"
+    },
+    {
+      "key": "Pet Snake::166506",
+      "collection": "Pet Snake",
+      "model": "Nimbus",
+      "backdrop": null,
+      "number": "166506"
+    },
+    {
+      "key": "Faith Amulet::20460",
+      "collection": "Faith Amulet",
+      "model": "Frosty Night",
+      "backdrop": null,
+      "number": "20460"
+    },
+    {
+      "key": "Candy Cane::202479",
+      "collection": "Candy Cane",
+      "model": "Phantom",
+      "backdrop": null,
+      "number": "202479"
+    },
+    {
+      "key": "Spiced Wine::33836",
+      "collection": "Spiced Wine",
+      "model": "Swamp Gas",
+      "backdrop": null,
+      "number": "33836"
+    },
+    {
+      "key": "Swag Bag::150848",
+      "collection": "Swag Bag",
+      "model": "Snoopcoins",
+      "backdrop": null,
+      "number": "150848"
+    },
+    {
+      "key": "Spiced Wine::69737",
+      "collection": "Spiced Wine",
+      "model": "Tequila Sunrise",
+      "backdrop": null,
+      "number": "69737"
+    },
+    {
+      "key": "Instant Ramen::252243",
+      "collection": "Instant Ramen",
+      "model": "Jade Dragon",
+      "backdrop": null,
+      "number": "252243"
+    },
+    {
+      "key": "Happy Brownie::63423",
+      "collection": "Happy Brownie",
+      "model": "Wasteroid",
+      "backdrop": null,
+      "number": "63423"
+    },
+    {
+      "key": "Sakura Flower::65261",
+      "collection": "Sakura Flower",
+      "model": "Meadowlyn",
+      "backdrop": null,
+      "number": "65261"
+    },
+    {
+      "key": "Snake Box::94414",
+      "collection": "Snake Box",
+      "model": "Candy Bubble",
+      "backdrop": null,
+      "number": "94414"
+    },
+    {
+      "key": "Skull Flower::3210",
+      "collection": "Skull Flower",
+      "model": "White Rose (3%)",
+      "backdrop": "Malachite (2%)",
+      "number": "3210"
+    },
+    {
+      "key": "Vintage Cigar::5384",
+      "collection": "Vintage Cigar",
+      "model": "Ashtray (1%)",
+      "backdrop": "Raspberry (1.5%)",
+      "number": "5384"
+    },
+    {
+      "key": "Stellar Rocket::83054",
+      "collection": "Stellar Rocket",
+      "model": "Banana (2.5%)",
+      "backdrop": "Pine Green (1%)",
+      "number": "83054"
+    },
+    {
+      "key": "Santa Hat::66646",
+      "collection": "Santa Hat",
+      "model": "Frosted Sun (2%)",
+      "backdrop": "Coral Red (2%)",
+      "number": "66646"
+    },
+    {
+      "key": "Ginger Cookie::2718",
+      "collection": "Ginger Cookie",
+      "model": "Icing Sugar (1.6%)",
+      "backdrop": "Platinum (2%)",
+      "number": "2718"
+    },
+    {
+      "key": "Ginger Cookie::65985",
+      "collection": "Ginger Cookie",
+      "model": "Strawberry (1.7%)",
+      "backdrop": "Ivory White (1.5%)",
+      "number": "65985"
+    },
+    {
+      "key": "Ice Cream::44581",
+      "collection": "Ice Cream",
+      "model": "Vice Dream (3%)",
+      "backdrop": "Light Olive (1.5%)",
+      "number": "44581"
+    },
+    {
+      "key": "Whip Cupcake::249968",
+      "collection": "Whip Cupcake",
+      "model": "Cream Scream (2%)",
+      "backdrop": "Jade Green (1.2%)",
+      "number": "249968"
+    },
+    {
+      "key": "Ice Cream::44535",
+      "collection": "Ice Cream",
+      "model": "Fresh Berry (3%)",
+      "backdrop": "Rifle Green (1.5%)",
+      "number": "44535"
+    },
+    {
+      "key": "Ice Cream::44399",
+      "collection": "Ice Cream",
+      "model": "Trio Scoop (3%)",
+      "backdrop": "Dark Green (1.5%)",
+      "number": "44399"
+    },
+    {
+      "key": "Xmas Stocking::198231",
+      "collection": "Xmas Stocking",
+      "model": "Crypto Wallet (0.5%)",
+      "backdrop": "Feldgrau (1%)",
+      "number": "198231"
+    },
+    {
+      "key": "Fresh Socks::40836",
+      "collection": "Fresh Socks",
+      "model": "Heavy Rain (2.5%)",
+      "backdrop": "Navy Blue (1.2%)",
+      "number": "40836"
+    },
+    {
+      "key": "Stellar Rocket::36009",
+      "collection": "Stellar Rocket",
+      "model": "Fireworks (3%)",
+      "backdrop": "Azure Blue (1.5%)",
+      "number": "36009"
+    },
+    {
+      "key": "Stellar Rocket::35981",
+      "collection": "Stellar Rocket",
+      "model": "Fireworks (3%)",
+      "backdrop": "Pistachio (1.5%)",
+      "number": "35981"
+    },
+    {
+      "key": "Cookie Heart::60691",
+      "collection": "Cookie Heart",
+      "model": "Kawaii Frog (1%)",
+      "backdrop": "Neon Blue (2%)",
+      "number": "60691"
+    },
+    {
+      "key": "Happy Brownie::32632",
+      "collection": "Happy Brownie",
+      "model": "Captain Flush (2.5%)",
+      "backdrop": "Mexican Pink (1.5%)",
+      "number": "32632"
+    },
+    {
+      "key": "Ice Cream::52708",
+      "collection": "Ice Cream",
+      "model": "Kiwi Sorbet (3%)",
+      "backdrop": "Old Gold (1.5%)",
+      "number": "52708"
+    },
+    {
+      "key": "Money Pot::54185",
+      "collection": "Money Pot",
+      "model": "TON Holder (0.4%)",
+      "backdrop": "Pistachio (1.5%)",
+      "number": "54185"
+    },
+    {
+      "key": "Snoop Cigar::111841",
+      "collection": "Snoop Cigar",
+      "model": "Space Wrap (2%)",
+      "backdrop": "Gunmetal (1.2%)",
+      "number": "111841"
+    },
+    {
+      "key": "Snoop Cigar::13021",
+      "collection": "Snoop Cigar",
+      "model": "Space Wrap (2%)",
+      "backdrop": "Grape (1.5%)",
+      "number": "13021"
+    },
+    {
+      "key": "Eternal Candle::4559",
+      "collection": "Eternal Candle",
+      "model": "Carnation (1.5%)",
+      "backdrop": "Chestnut (2%)",
+      "number": "4559"
+    },
+    {
+      "key": "Xmas Stocking::97756",
+      "collection": "Xmas Stocking",
+      "model": "Cold Feet (3%)",
+      "backdrop": "Dark Lilac (1.2%)",
+      "number": "97756"
+    },
+    {
+      "key": "Snake Box::5614",
+      "collection": "Snake Box",
+      "model": "Secret Santa (3%)",
+      "backdrop": "Emerald (1.2%)",
+      "number": "5614"
+    },
+    {
+      "key": "Lol Pop::388627",
+      "collection": "Lol Pop",
+      "model": "Magic Wand (1%)",
+      "backdrop": "Caramel (1.5%)",
+      "number": "388627"
+    },
+    {
+      "key": "Snoop Dogg::239208",
+      "collection": "Snoop Dogg",
+      "model": "Blonde (2%)",
+      "backdrop": "Pistachio (1.5%)",
+      "number": "239208"
+    },
+    {
+      "key": "Winter Wreath::50971",
+      "collection": "Winter Wreath",
+      "model": "Chocolate (2%)",
+      "backdrop": "Copper (1.2%)",
+      "number": "50971"
+    },
+    {
+      "key": "Moon Pendant::25810",
+      "collection": "Moon Pendant",
+      "model": "Stellar Grace (3%)",
+      "backdrop": "French Violet (1.5%)",
+      "number": "25810"
+    },
+    {
+      "key": "UFC Strike::50025",
+      "collection": "UFC Strike",
+      "model": "UFC Glove Token (1%)",
+      "backdrop": "Carrot Juice (1%)",
+      "number": "50025"
+    },
+    {
+      "key": "Bow Tie::8465",
+      "collection": "Bow Tie",
+      "model": "Bordeaux (5%)",
+      "backdrop": "Deep Cyan (1.2%)",
+      "number": "8465"
+    },
+    {
+      "key": "Bow Tie::10871",
+      "collection": "Bow Tie",
+      "model": "Mistletoe (2.5%)",
+      "backdrop": "Cobalt Blue (1.2%)",
+      "number": "10871"
+    },
+    {
+      "key": "Sleigh Bell::3649",
+      "collection": "Sleigh Bell",
+      "model": "Black Silver (2%)",
+      "backdrop": "Orange (1.5%)",
+      "number": "3649"
+    },
+    {
+      "key": "Sleigh Bell::14742",
+      "collection": "Sleigh Bell",
+      "model": "Deutschland (2.5%)",
+      "backdrop": "Turquoise (1.2%)",
+      "number": "14742"
+    },
+    {
+      "key": "Bling Binky::1783",
+      "collection": "Bling Binky",
+      "model": "Red Bull (2.5%)",
+      "backdrop": "Pacific Cyan (1.2%)",
+      "number": "1783"
+    },
+    {
+      "key": "Faith Amulet::62111",
+      "collection": "Faith Amulet",
+      "model": "Sunny Mosaic (2%)",
+      "backdrop": "French Violet (1.2%)",
+      "number": "62111"
+    },
+    {
+      "key": "Faith Amulet::71064",
+      "collection": "Faith Amulet",
+      "model": "Luminous (2.5%)",
+      "backdrop": "Hunter Green (1.5%)",
+      "number": "71064"
+    },
+    {
+      "key": "Faith Amulet::126291",
+      "collection": "Faith Amulet",
+      "model": "Sunset Gem (1.5%)",
+      "backdrop": "Fire Engine (1.5%)",
+      "number": "126291"
+    },
+    {
+      "key": "Faith Amulet::47988",
+      "collection": "Faith Amulet",
+      "model": "Lavender (2.5%)",
+      "backdrop": "Chocolate (1%)",
+      "number": "47988"
+    },
+    {
+      "key": "Faith Amulet::48039",
+      "collection": "Faith Amulet",
+      "model": "Rose Gold (3%)",
+      "backdrop": "Caramel (1.2%)",
+      "number": "48039"
+    },
+    {
+      "key": "Jester Hat::53733",
+      "collection": "Jester Hat",
+      "model": "Hellscape",
+      "backdrop": null,
+      "number": "53733"
+    },
+    {
+      "key": "Instant Ramen::99991",
+      "collection": "Instant Ramen",
+      "model": "Cat Food",
+      "backdrop": null,
+      "number": "99991"
+    },
+    {
+      "key": "Ginger Cookie::139006",
+      "collection": "Ginger Cookie",
+      "model": "Vanilla",
+      "backdrop": null,
+      "number": "139006"
+    },
+    {
+      "key": "Sakura Flower::4703",
+      "collection": "Sakura Flower",
+      "model": "Party Bloom",
+      "backdrop": null,
+      "number": "4703"
+    },
+    {
+      "key": "Cookie Heart::152106",
+      "collection": "Cookie Heart",
+      "model": "Pixel Beat",
+      "backdrop": null,
+      "number": "152106"
+    },
+    {
+      "key": "Happy Brownie::19187",
+      "collection": "Happy Brownie",
+      "model": "Cactus",
+      "backdrop": null,
+      "number": "19187"
+    },
+    {
+      "key": "Bow Tie::13940",
+      "collection": "Bow Tie",
+      "model": "The Raven",
+      "backdrop": null,
+      "number": "13940"
+    },
+    {
+      "key": "Star Notepad::32803",
+      "collection": "Star Notepad",
+      "model": "Starry Night",
+      "backdrop": null,
+      "number": "32803"
+    },
+    {
+      "key": "Input Key::3550",
+      "collection": "Input Key",
+      "model": "Chill Key",
+      "backdrop": null,
+      "number": "3550"
+    },
+    {
+      "key": "Faith Amulet::99877",
+      "collection": "Faith Amulet",
+      "model": "Morning Dew",
+      "backdrop": null,
+      "number": "99877"
+    },
+    {
+      "key": "Witch Hat::80343",
+      "collection": "Witch Hat",
+      "model": "Radagast",
+      "backdrop": null,
+      "number": "80343"
+    },
+    {
+      "key": "Hex Pot::7043",
+      "collection": "Hex Pot",
+      "model": "Burned Love",
+      "backdrop": null,
+      "number": "7043"
+    },
+    {
+      "key": "Ice Cream::102960",
+      "collection": "Ice Cream",
+      "model": "Kiwi Sorbet",
+      "backdrop": null,
+      "number": "102960"
+    },
+    {
+      "key": "Pretty Posy::44030",
+      "collection": "Pretty Posy",
+      "model": "Tangerine",
+      "backdrop": null,
+      "number": "44030"
+    },
+    {
+      "key": "Sakura Flower::69782",
+      "collection": "Sakura Flower",
+      "model": "Fire Bloom",
+      "backdrop": null,
+      "number": "69782"
+    },
+    {
+      "key": "Tama Gadget::75561",
+      "collection": "Tama Gadget",
+      "model": "Bronze",
+      "backdrop": null,
+      "number": "75561"
+    },
+    {
+      "key": "Snow Mittens::8885",
+      "collection": "Snow Mittens",
+      "model": "Pingu",
+      "backdrop": null,
+      "number": "8885"
+    },
+    {
+      "key": "Berry Box::49492",
+      "collection": "Berry Box",
+      "model": "Infrared",
+      "backdrop": null,
+      "number": "49492"
+    },
+    {
+      "key": "Mad Pumpkin::12251",
+      "collection": "Mad Pumpkin",
+      "model": "Creepy Po",
+      "backdrop": null,
+      "number": "12251"
+    },
+    {
+      "key": "Spring Basket::75743",
+      "collection": "Spring Basket",
+      "model": "Baby Dragon",
+      "backdrop": null,
+      "number": "75743"
+    },
+    {
+      "key": "Money Pot::64444",
+      "collection": "Money Pot",
+      "model": "Snake Charmer",
+      "backdrop": null,
+      "number": "64444"
+    },
+    {
+      "key": "Love Potion::4401",
+      "collection": "Love Potion",
+      "model": "Beauty Brew",
+      "backdrop": null,
+      "number": "4401"
+    },
+    {
+      "key": "Faith Amulet::29032",
+      "collection": "Faith Amulet",
+      "model": "Midnight",
+      "backdrop": null,
+      "number": "29032"
+    },
+    {
+      "key": "Money Pot::65652",
+      "collection": "Money Pot",
+      "model": "Love Potion",
+      "backdrop": null,
+      "number": "65652"
+    },
+    {
+      "key": "Party Sparkler::92356",
+      "collection": "Party Sparkler",
+      "model": "Dryad Wand",
+      "backdrop": null,
+      "number": "92356"
+    },
+    {
+      "key": "Happy Brownie::61704",
+      "collection": "Happy Brownie",
+      "model": "Censored",
+      "backdrop": null,
+      "number": "61704"
     }
   ],
   "collection_images": {
@@ -61342,8 +61948,8 @@
     "Stellar Rocket": "images\\collections\\stellar-rocket-21afe09d36.jpg",
     "Holiday Drink": "images\\collections\\holiday-drink-d5e7ccb01e.jpg",
     "Party Sparkler": "images\\collections\\party-sparkler-ef582ac2d6.jpg",
-    "Whip Cupcake": "images\\collections\\whip-cupcake-83a0658da1.png",
-    "Instant Ramen": "images\\collections\\instant-ramen-9e9d4839ce.png",
+    "Whip Cupcake": "images\\collections\\whip-cupcake-83a0658da1.jpg",
+    "Instant Ramen": "images\\collections\\instant-ramen-9e9d4839ce.jpg",
     "Happy Brownie": "images\\collections\\happy-brownie-8a12707931.jpg",
     "Clover Pin": "images\\collections\\clover-pin-426893a080.jpg",
     "Money Pot": "images\\collections\\money-pot-51265c3141.jpg",
@@ -61358,7 +61964,7 @@
     "Restless Jar": "images\\collections\\restless-jar-6d1fca4db3.jpg",
     "Spring Basket": "images\\collections\\spring-basket-ef5e27379a.jpg",
     "Valentine Box": "images\\collections\\valentine-box-3d99691593.jpg",
-    "Lol Pop": "images\\collections\\lol-pop-9d40274610.png",
+    "Lol Pop": "images\\collections\\lol-pop-9d40274610.jpg",
     "Big Year": "images\\collections\\big-year-f59db81913.jpg",
     "Jester Hat": "images\\collections\\jester-hat-5f6afafc3e.jpg",
     "Candy Cane": "images\\collections\\candy-cane-31cecd6179.jpg",
@@ -61380,7 +61986,7 @@
     "Bunny Muffin": "images\\collections\\bunny-muffin-ce98bfb9b8.jpg",
     "Easter Egg": "images\\collections\\easter-egg-91c6a4897a.jpg",
     "Jolly Chimp": "images\\collections\\jolly-chimp-76b8fede08.jpg",
-    "Desk Calendar": "images\\collections\\desk-calendar-21d3e60965.png",
+    "Desk Calendar": "images\\collections\\desk-calendar-21d3e60965.jpg",
     "Winter Wreath": "images\\collections\\winter-wreath-3be098888e.jpg",
     "Hypno Lollipop": "images\\collections\\hypno-lollipop-fc613a7803.jpg",
     "Witch Hat": "images\\collections\\witch-hat-5629c20fd6.jpg",
@@ -61445,7 +62051,7 @@
     "Spring Basket::Dalmatian Pup": "images\\models\\spring-basket-dalmatian-pup-2bc1658e10.jpg",
     "Ice Cream::Whisker": "images\\models\\ice-cream-whisker-454fb92b14.jpg",
     "Clover Pin::Joystick": "images\\models\\clover-pin-joystick-4bc24f590b.jpg",
-    "Whip Cupcake::Triple Treat": "images\\models\\whip-cupcake-triple-treat-e4cf5c0aad.png",
+    "Whip Cupcake::Triple Treat": "images\\models\\whip-cupcake-triple-treat-e4cf5c0aad.jpg",
     "Party Sparkler::Airsoft": "images\\models\\party-sparkler-airsoft-67a183e4fb.jpg",
     "Eternal Candle::Warm Embrace": "images\\models\\eternal-candle-warm-embrace-1056715ec4.jpg",
     "Easter Egg::Ladybird": "images\\models\\easter-egg-ladybird-2844d4c939.jpg",
@@ -62693,7 +63299,7 @@
     "UFC Strike::UFC Legacy": "images\\models\\ufc-strike-ufc-legacy-8749b631cc.jpg",
     "Lunar Snake::Green Viper": "images\\models\\lunar-snake-green-viper-6a70a45df7.jpg",
     "Faith Amulet::Ruby Drop": "images\\models\\faith-amulet-ruby-drop-cf4d88ac6c.jpg",
-    "Instant Ramen::Octopus": "images\\models\\instant-ramen-octopus-0aaf6f7a7c.png",
+    "Instant Ramen::Octopus": "images\\models\\instant-ramen-octopus-0aaf6f7a7c.jpg",
     "Xmas Stocking::Gemstone": "images\\models\\xmas-stocking-gemstone-eaa9d5458d.jpg",
     "Hex Pot::Peppermint": "images\\models\\hex-pot-peppermint-0f0314dd0c.jpg",
     "Lol Pop::Delusion": "images\\models\\lol-pop-delusion-2da12d8cf3.jpg",
@@ -62815,7 +63421,71 @@
     "Desk Calendar::Sunshine": "images\\models\\desk-calendar-sunshine-83d0434b2b.png",
     "Desk Calendar::Green Day": "images\\models\\desk-calendar-green-day-15903561f6.png",
     "Desk Calendar::Gold Leaf": "images\\models\\desk-calendar-gold-leaf-85df85df83.png",
-    "Desk Calendar::Barbie Day": "images\\models\\desk-calendar-barbie-day-9616015ba4.png"
+    "Desk Calendar::Barbie Day": "images\\models\\desk-calendar-barbie-day-9616015ba4.png",
+    "Candy Cane::Phantom": "images\\models\\candy-cane-phantom-96c8548932.jpg",
+    "Spiced Wine::Swamp Gas": "images\\models\\spiced-wine-swamp-gas-16a277a7ad.jpg",
+    "Swag Bag::Snoopcoins": "images\\models\\swag-bag-snoopcoins-d99a2bb77d.jpg",
+    "Spiced Wine::Tequila Sunrise": "images\\models\\spiced-wine-tequila-sunrise-9e492f6830.jpg",
+    "Snoop Cigar::Space Wrap": "images\\models\\snoop-cigar-space-wrap-b9e9d629d6.jpg",
+    "Money Pot::Gold Miner": "images\\models\\money-pot-gold-miner-9f54b50c95.jpg",
+    "Cookie Heart::Red Apple": "images\\models\\cookie-heart-red-apple-e12fce7682.jpg",
+    "Lush Bouquet::Lotus Garden": "images\\models\\lush-bouquet-lotus-garden-e511771d55.jpg",
+    "Pretty Posy::Sea Shanty": "images\\models\\pretty-posy-sea-shanty-761fc23f08.jpg",
+    "Sakura Flower::Meadowlyn": "images\\models\\sakura-flower-meadowlyn-7299e5f3e2.jpg",
+    "Snake Box::Candy Bubble": "images\\models\\snake-box-candy-bubble-ff1e6dbd4c.jpg",
+    "Jester Hat::Blue Buffoon": "images\\models\\jester-hat-blue-buffoon-0b5f9cb91f.jpg",
+    "Skull Flower::White Rose (3%)": "images\\models\\skull-flower-white-rose-3-4d6836ef22.jpg",
+    "Vintage Cigar::Ashtray (1%)": "images\\models\\vintage-cigar-ashtray-1-1857205427.jpg",
+    "Stellar Rocket::Banana (2.5%)": "images\\models\\stellar-rocket-banana-2-5-b6ac07606c.jpg",
+    "Santa Hat::Frosted Sun (2%)": "images\\models\\santa-hat-frosted-sun-2-0e65b34a04.jpg",
+    "Ginger Cookie::Icing Sugar (1.6%)": "images\\models\\ginger-cookie-icing-sugar-1-6-694e4b01cd.jpg",
+    "Ginger Cookie::Strawberry (1.7%)": "images\\models\\ginger-cookie-strawberry-1-7-8853b3e695.jpg",
+    "Ice Cream::Vice Dream (3%)": "images\\models\\ice-cream-vice-dream-3-fe685de73b.jpg",
+    "Whip Cupcake::Cream Scream (2%)": "images\\models\\whip-cupcake-cream-scream-2-95e8ca4e6a.jpg",
+    "Ice Cream::Fresh Berry (3%)": "images\\models\\ice-cream-fresh-berry-3-0bbe950286.jpg",
+    "Ice Cream::Trio Scoop (3%)": "images\\models\\ice-cream-trio-scoop-3-445f26f64a.jpg",
+    "Xmas Stocking::Crypto Wallet (0.5%)": "images\\models\\xmas-stocking-crypto-wallet-0-5-4428384ca2.jpg",
+    "Fresh Socks::Heavy Rain (2.5%)": "images\\models\\fresh-socks-heavy-rain-2-5-f94fdd34fd.jpg",
+    "Stellar Rocket::Fireworks (3%)": "images\\models\\stellar-rocket-fireworks-3-83b2311737.jpg",
+    "Cookie Heart::Kawaii Frog (1%)": "images\\models\\cookie-heart-kawaii-frog-1-274b10ab8d.jpg",
+    "Money Pot::TON Holder (0.4%)": "images\\models\\money-pot-ton-holder-0-4-f80ebb7803.jpg",
+    "Snoop Cigar::Space Wrap (2%)": "images\\models\\snoop-cigar-space-wrap-2-9703ec226a.jpg",
+    "Eternal Candle::Carnation (1.5%)": "images\\models\\eternal-candle-carnation-1-5-bc0656a6b6.jpg",
+    "Xmas Stocking::Cold Feet (3%)": "images\\models\\xmas-stocking-cold-feet-3-89d682be49.jpg",
+    "Snake Box::Secret Santa (3%)": "images\\models\\snake-box-secret-santa-3-19612f735b.jpg",
+    "Lol Pop::Magic Wand (1%)": "images\\models\\lol-pop-magic-wand-1-1d3054e246.jpg",
+    "Snoop Dogg::Blonde (2%)": "images\\models\\snoop-dogg-blonde-2-d7537907b2.jpg",
+    "Winter Wreath::Chocolate (2%)": "images\\models\\winter-wreath-chocolate-2-5fb5f99460.jpg",
+    "Moon Pendant::Stellar Grace (3%)": "images\\models\\moon-pendant-stellar-grace-3-ea3c1143c5.jpg",
+    "UFC Strike::UFC Glove Token (1%)": "images\\models\\ufc-strike-ufc-glove-token-1-3872afbd9c.jpg",
+    "Bow Tie::Bordeaux (5%)": "images\\models\\bow-tie-bordeaux-5-f3a007e797.jpg",
+    "Bow Tie::Mistletoe (2.5%)": "images\\models\\bow-tie-mistletoe-2-5-c5aa9f7532.jpg",
+    "Sleigh Bell::Black Silver (2%)": "images\\models\\sleigh-bell-black-silver-2-d8118a8d75.jpg",
+    "Sleigh Bell::Deutschland (2.5%)": "images\\models\\sleigh-bell-deutschland-2-5-248b7d7551.jpg",
+    "Bling Binky::Red Bull (2.5%)": "images\\models\\bling-binky-red-bull-2-5-f994bfb529.jpg",
+    "Faith Amulet::Sunny Mosaic (2%)": "images\\models\\faith-amulet-sunny-mosaic-2-2badc9dd2d.jpg",
+    "Faith Amulet::Luminous (2.5%)": "images\\models\\faith-amulet-luminous-2-5-ca1ef86538.jpg",
+    "Faith Amulet::Sunset Gem (1.5%)": "images\\models\\faith-amulet-sunset-gem-1-5-cf66a7020c.jpg",
+    "Faith Amulet::Lavender (2.5%)": "images\\models\\faith-amulet-lavender-2-5-d539bd7c71.jpg",
+    "Faith Amulet::Rose Gold (3%)": "images\\models\\faith-amulet-rose-gold-3-6ba565b4a0.jpg",
+    "Jester Hat::Hellscape": "images\\models\\jester-hat-hellscape-927a102c28.jpg",
+    "Instant Ramen::Cat Food": "images\\models\\instant-ramen-cat-food-e06918134a.jpg",
+    "Ginger Cookie::Vanilla": "images\\models\\ginger-cookie-vanilla-f9906d5b12.jpg",
+    "Sakura Flower::Party Bloom": "images\\models\\sakura-flower-party-bloom-5a5fb7f7bf.jpg",
+    "Cookie Heart::Pixel Beat": "images\\models\\cookie-heart-pixel-beat-3f42b8e6b3.jpg",
+    "Bow Tie::The Raven": "images\\models\\bow-tie-the-raven-cb3ec5d8ad.jpg",
+    "Star Notepad::Starry Night": "images\\models\\star-notepad-starry-night-e105323c93.jpg",
+    "Witch Hat::Radagast": "images\\models\\witch-hat-radagast-1d58e38d46.jpg",
+    "Hex Pot::Burned Love": "images\\models\\hex-pot-burned-love-03f3e534df.jpg",
+    "Input Key::Infinity": "images\\models\\input-key-infinity-c7d141cc84.jpg",
+    "Light Sword::Enforcer": "images\\models\\light-sword-enforcer-216913bdfe.jpg",
+    "Sakura Flower::Fire Bloom": "images\\models\\sakura-flower-fire-bloom-9361ee2b5c.jpg",
+    "Snake Box::Fuchsia": "images\\models\\snake-box-fuchsia-7cbaae29e4.jpg",
+    "Tama Gadget::Bronze": "images\\models\\tama-gadget-bronze-9aa7c57d8f.jpg",
+    "Snow Mittens::Pingu": "images\\models\\snow-mittens-pingu-f72ba3d836.jpg",
+    "Berry Box::Infrared": "images\\models\\berry-box-infrared-a15e9fa21a.jpg",
+    "Mad Pumpkin::Creepy Po": "images\\models\\mad-pumpkin-creepy-po-11eb5146c8.jpg",
+    "Mousse Cake::Checkmate": "images\\models\\mousse-cake-checkmate-84cc95ad0e.jpg"
   },
   "background_images": {
     "Candy Cane::Amber (1.5%)": "images\\backgrounds\\candy-cane-amber-1-5-2f35b40a9b.jpg",
@@ -63090,7 +63760,44 @@
     "Desk Calendar::Aquamarine": "images\\backgrounds\\desk-calendar-aquamarine-1abe974e72.png",
     "Desk Calendar::Dark Lilac": "images\\backgrounds\\desk-calendar-dark-lilac-36cd643d70.png",
     "Desk Calendar::Cappuccino": "images\\backgrounds\\desk-calendar-cappuccino-b9ddd3a1c9.png",
-    "Desk Calendar::Platinum": "images\\backgrounds\\desk-calendar-platinum-ca94d2e10d.png"
+    "Desk Calendar::Platinum": "images\\backgrounds\\desk-calendar-platinum-ca94d2e10d.png",
+    "Skull Flower::Malachite (2%)": "images\\backgrounds\\skull-flower-malachite-2-ca5d335800.jpg",
+    "Vintage Cigar::Raspberry (1.5%)": "images\\backgrounds\\vintage-cigar-raspberry-1-5-031b2ff4d5.jpg",
+    "Stellar Rocket::Pine Green (1%)": "images\\backgrounds\\stellar-rocket-pine-green-1-715bc2f9da.jpg",
+    "Santa Hat::Coral Red (2%)": "images\\backgrounds\\santa-hat-coral-red-2-4dcb2f7fc6.jpg",
+    "Ginger Cookie::Platinum (2%)": "images\\backgrounds\\ginger-cookie-platinum-2-5891231bf7.jpg",
+    "Ginger Cookie::Ivory White (1.5%)": "images\\backgrounds\\ginger-cookie-ivory-white-1-5-d7664696c7.jpg",
+    "Ice Cream::Light Olive (1.5%)": "images\\backgrounds\\ice-cream-light-olive-1-5-07d30a5d0d.jpg",
+    "Whip Cupcake::Jade Green (1.2%)": "images\\backgrounds\\whip-cupcake-jade-green-1-2-9a8b75a722.jpg",
+    "Ice Cream::Rifle Green (1.5%)": "images\\backgrounds\\ice-cream-rifle-green-1-5-91686742df.jpg",
+    "Ice Cream::Dark Green (1.5%)": "images\\backgrounds\\ice-cream-dark-green-1-5-1024df01b3.jpg",
+    "Xmas Stocking::Feldgrau (1%)": "images\\backgrounds\\xmas-stocking-feldgrau-1-9896e4d584.jpg",
+    "Fresh Socks::Navy Blue (1.2%)": "images\\backgrounds\\fresh-socks-navy-blue-1-2-08263dae96.jpg",
+    "Stellar Rocket::Azure Blue (1.5%)": "images\\backgrounds\\stellar-rocket-azure-blue-1-5-a8a6e376ce.jpg",
+    "Stellar Rocket::Pistachio (1.5%)": "images\\backgrounds\\stellar-rocket-pistachio-1-5-14d4097586.jpg",
+    "Cookie Heart::Neon Blue (2%)": "images\\backgrounds\\cookie-heart-neon-blue-2-e7e165f635.jpg",
+    "Happy Brownie::Mexican Pink (1.5%)": "images\\backgrounds\\happy-brownie-mexican-pink-1-5-c70317e44a.jpg",
+    "Ice Cream::Old Gold (1.5%)": "images\\backgrounds\\ice-cream-old-gold-1-5-8025a097ef.jpg",
+    "Money Pot::Pistachio (1.5%)": "images\\backgrounds\\money-pot-pistachio-1-5-0b449b16d2.jpg",
+    "Snoop Cigar::Gunmetal (1.2%)": "images\\backgrounds\\snoop-cigar-gunmetal-1-2-92316086c0.jpg",
+    "Snoop Cigar::Grape (1.5%)": "images\\backgrounds\\snoop-cigar-grape-1-5-42e47f1504.jpg",
+    "Eternal Candle::Chestnut (2%)": "images\\backgrounds\\eternal-candle-chestnut-2-d02a2e97ac.jpg",
+    "Xmas Stocking::Dark Lilac (1.2%)": "images\\backgrounds\\xmas-stocking-dark-lilac-1-2-04f2619535.jpg",
+    "Snake Box::Emerald (1.2%)": "images\\backgrounds\\snake-box-emerald-1-2-e4d3044cf5.jpg",
+    "Snoop Dogg::Pistachio (1.5%)": "images\\backgrounds\\snoop-dogg-pistachio-1-5-da0bc48907.jpg",
+    "Winter Wreath::Copper (1.2%)": "images\\backgrounds\\winter-wreath-copper-1-2-e6d2ee6662.jpg",
+    "Moon Pendant::French Violet (1.5%)": "images\\backgrounds\\moon-pendant-french-violet-1-5-17a3cb24e6.jpg",
+    "UFC Strike::Carrot Juice (1%)": "images\\backgrounds\\ufc-strike-carrot-juice-1-95b0eb57ca.jpg",
+    "Bow Tie::Deep Cyan (1.2%)": "images\\backgrounds\\bow-tie-deep-cyan-1-2-ecd1bf89cf.jpg",
+    "Bow Tie::Cobalt Blue (1.2%)": "images\\backgrounds\\bow-tie-cobalt-blue-1-2-397eaaf8a5.jpg",
+    "Sleigh Bell::Orange (1.5%)": "images\\backgrounds\\sleigh-bell-orange-1-5-77cf6f07f3.jpg",
+    "Sleigh Bell::Turquoise (1.2%)": "images\\backgrounds\\sleigh-bell-turquoise-1-2-0474f143ca.jpg",
+    "Bling Binky::Pacific Cyan (1.2%)": "images\\backgrounds\\bling-binky-pacific-cyan-1-2-d700820e41.jpg",
+    "Faith Amulet::French Violet (1.2%)": "images\\backgrounds\\faith-amulet-french-violet-1-2-8d8a62267e.jpg",
+    "Faith Amulet::Hunter Green (1.5%)": "images\\backgrounds\\faith-amulet-hunter-green-1-5-74b336671a.jpg",
+    "Faith Amulet::Fire Engine (1.5%)": "images\\backgrounds\\faith-amulet-fire-engine-1-5-8295357e66.jpg",
+    "Faith Amulet::Chocolate (1%)": "images\\backgrounds\\faith-amulet-chocolate-1-676fcd8a1d.jpg",
+    "Faith Amulet::Caramel (1.2%)": "images\\backgrounds\\faith-amulet-caramel-1-2-4b8ecad5af.jpg"
   },
   "gift_images": {
     "Ice Cream::120681": "images\\gifts\\ice-cream-120681-012c8866e7.jpg",
@@ -64586,5 +65293,5 @@
     "Swag Bag::39": "images\\gifts\\swag-bag-39-22141ea228.jpg",
     "Desk Calendar::72406": "images\\gifts\\desk-calendar-72406-680d98d6f1.jpg"
   },
-  "updated_at": "2026-01-28T23:02:08.157857"
+  "updated_at": "2026-01-31T00:40:42.310219"
 }

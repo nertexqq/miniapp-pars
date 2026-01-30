@@ -1,5 +1,11 @@
 // Telegram Mini App + API base (from ?api= or same origin)
 const API_BASE = (typeof window !== 'undefined' && window.API_BASE) ? window.API_BASE : '';
+// Заголовок для ngrok: иначе бесплатный ngrok отдаёт HTML "Visit Site" вместо JSON
+function apiHeaders(extra) {
+    const h = { ...(extra || {}) };
+    if (API_BASE && API_BASE.includes('ngrok')) h['ngrok-skip-browser-warning'] = 'true';
+    return h;
+}
 if (window.Telegram && window.Telegram.WebApp) {
     window.Telegram.WebApp.ready();
     window.Telegram.WebApp.expand();
@@ -164,7 +170,7 @@ let catalogCache = null;
 
 async function loadStatus() {
     try {
-        const response = await fetch(API_BASE + '/api/status');
+        const response = await fetch(API_BASE + '/api/status', { headers: apiHeaders() });
         const data = await response.json();
         monitoringEnabled = data.enabled;
         monitoringToggle.checked = monitoringEnabled;
@@ -223,7 +229,7 @@ async function toggleMonitoring(enabled) {
     try {
         const response = await fetch(API_BASE + '/api/toggle', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers: apiHeaders({ 'Content-Type': 'application/json' }),
             body: JSON.stringify({ enabled })
         });
         const data = await response.json();
@@ -252,7 +258,7 @@ async function applyFiltersImmediate() {
     try {
         const response = await fetch(API_BASE + '/api/filters', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers: apiHeaders({ 'Content-Type': 'application/json' }),
             body: JSON.stringify(filters)
         });
         if (response.ok) {
@@ -414,7 +420,7 @@ function addGift(gift) {
         try {
             const response = await fetch(API_BASE + '/api/gift_details', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
+                headers: apiHeaders({ 'Content-Type': 'application/json' }),
                 body: JSON.stringify(gift),
             });
             const data = await response.json();
@@ -554,7 +560,7 @@ function openGiftModal(gift) {
 
     fetch(API_BASE + '/api/gift_details', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: apiHeaders({ 'Content-Type': 'application/json' }),
         body: JSON.stringify(gift),
     })
         .then(res => res.json())
@@ -716,15 +722,21 @@ async function openSelector(type) {
     const title = document.getElementById('selectorTitle');
     const list = document.getElementById('selectorList');
     const search = document.getElementById('selectorSearch');
+    const emptyState = document.getElementById('selectorEmptyState');
 
     title.textContent = type === 'collection' ? 'Коллекции' : 'Модели';
     search.value = '';
     list.innerHTML = '<li>Загрузка...</li>';
+    if (emptyState) emptyState.classList.add('hidden');
     modal.dataset.type = type;
 
     if (!catalogCache) {
-        const response = await fetch(API_BASE + '/api/catalog');
-        catalogCache = response.ok ? await response.json() : null;
+        try {
+            const response = await fetch(API_BASE + '/api/catalog', { headers: apiHeaders() });
+            catalogCache = response.ok ? await response.json() : null;
+        } catch (e) {
+            catalogCache = null;
+        }
     }
 
     let items = [];
@@ -742,7 +754,59 @@ async function openSelector(type) {
         }
     }
     renderSelectorList(items, type);
+    if (items.length === 0 && emptyState) {
+        emptyState.classList.remove('hidden');
+        emptyState.querySelector('.selector-empty-text').textContent = type === 'collection'
+            ? 'Коллекций пока нет. Каталог загружается с маркетплейсов на сервере.'
+            : 'Моделей пока нет. Сначала выберите коллекции или обновите каталог.';
+    }
     modal.classList.remove('hidden');
+}
+
+async function refreshCatalogFromSelector() {
+    const modal = document.getElementById('selectorModal');
+    const list = document.getElementById('selectorList');
+    const btn = document.getElementById('selectorRefreshCatalog');
+    const type = modal && modal.dataset.type;
+    if (!type) return;
+    if (btn) {
+        btn.disabled = true;
+        btn.textContent = 'Загрузка...';
+    }
+    list.innerHTML = '<li>Запуск построения каталога на сервере...</li>';
+    try {
+        await fetch(API_BASE + '/api/catalog/build', { method: 'POST', headers: apiHeaders() });
+        await new Promise(r => setTimeout(r, 4000));
+    } catch (e) {}
+    catalogCache = null;
+    try {
+        const response = await fetch(API_BASE + '/api/catalog', { headers: apiHeaders() });
+        catalogCache = response.ok ? await response.json() : null;
+    } catch (e) {
+        catalogCache = null;
+    }
+    if (btn) {
+        btn.disabled = false;
+        btn.textContent = 'Обновить каталог';
+    }
+    let items = [];
+    if (catalogCache) {
+        if (type === 'collection') {
+            items = (catalogCache.collections || []).map(name => ({ name }));
+        } else {
+            const modelsByCollection = catalogCache.models_by_collection || {};
+            const collections = selectedCollections.length ? selectedCollections : Object.keys(modelsByCollection);
+            const modelsSet = new Set();
+            collections.forEach(collection => {
+                (modelsByCollection[collection] || []).forEach(model => modelsSet.add(model));
+            });
+            items = Array.from(modelsSet).sort().map(name => ({ name }));
+        }
+    }
+    renderSelectorList(items, type);
+    const emptyState = document.getElementById('selectorEmptyState');
+    if (items.length === 0 && emptyState) emptyState.classList.remove('hidden');
+    else if (emptyState) emptyState.classList.add('hidden');
 }
 
 function ensureSelectorModal() {
@@ -758,6 +822,11 @@ function ensureSelectorModal() {
                 <input id="selectorSearch" type="text" placeholder="Поиск..." />
             </div>
             <ul id="selectorList" class="selector-list"></ul>
+            <div id="selectorEmptyState" class="selector-empty-state hidden">
+                <p class="selector-empty-text">Каталог пуст. Коллекции загружаются с маркетплейсов на сервере.</p>
+                <p class="selector-empty-hint">Запустите GUI-сервер (<code>python gui/server.py</code>), подождите 1–2 минуты или нажмите «Обновить каталог».</p>
+                <button id="selectorRefreshCatalog" type="button" class="btn btn-primary">Обновить каталог</button>
+            </div>
             <div class="selector-actions">
                 <button id="selectorCancel" type="button" class="btn btn-secondary">Закрыть</button>
                 <button id="selectorApply" type="button" class="btn btn-primary">Применить</button>
@@ -774,6 +843,7 @@ function ensureSelectorModal() {
         const query = modal.querySelector('#selectorSearch').value.toLowerCase();
         renderSelectorList(items.filter(item => item.name.toLowerCase().includes(query)), t);
     });
+    modal.querySelector('#selectorRefreshCatalog').addEventListener('click', refreshCatalogFromSelector);
 }
 
 function renderSelectorList(items, type) {
@@ -812,7 +882,14 @@ function renderSelectorList(items, type) {
         `;
         list.appendChild(li);
     });
-    if (!items.length) list.innerHTML = '<li class="selector-empty">Нет данных</li>';
+    if (!items.length) {
+        list.innerHTML = '<li class="selector-empty">Нет данных</li>';
+        const emptyState = document.getElementById('selectorEmptyState');
+        if (emptyState) emptyState.classList.remove('hidden');
+    } else {
+        const emptyState = document.getElementById('selectorEmptyState');
+        if (emptyState) emptyState.classList.add('hidden');
+    }
 }
 
 function applySelector() {
@@ -833,7 +910,7 @@ function closeSelector() {
 
 async function pollRecentGifts() {
     try {
-        const response = await fetch(API_BASE + '/api/gifts');
+        const response = await fetch(API_BASE + '/api/gifts', { headers: apiHeaders() });
         if (!response.ok) return;
         const items = await response.json();
         if (Array.isArray(items)) items.forEach(addGift);

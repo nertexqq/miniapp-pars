@@ -20,6 +20,8 @@ from datetime import datetime
 from flask import Flask, render_template, jsonify, request, Response, send_from_directory
 import requests
 from flask_socketio import SocketIO, emit
+import warnings
+warnings.filterwarnings("ignore", message=".*Eventlet is deprecated.*", category=DeprecationWarning)
 import eventlet
 
 # Добавляем корневую директорию в путь для импорта модулей бота
@@ -89,12 +91,19 @@ app.config['SECRET_KEY'] = os.getenv('GUI_SECRET_KEY', 'portals-gifts-gui-secret
 socketio = SocketIO(app, cors_allowed_origins="*", async_mode='eventlet')
 
 
+@app.before_request
+def log_request():
+    """Логируем входящие запросы — в консоли видно, доходят ли запросы от Mini App"""
+    if request.path.startswith('/api/') or request.path == '/':
+        logger.info("→ %s %s", request.method, request.path)
+
+
 @app.after_request
 def add_cors_headers(response):
     """CORS для Telegram Mini App и GitHub Pages"""
     response.headers['Access-Control-Allow-Origin'] = '*'
     response.headers['Access-Control-Allow-Methods'] = 'GET, POST, OPTIONS'
-    response.headers['Access-Control-Allow-Headers'] = 'Content-Type'
+    response.headers['Access-Control-Allow-Headers'] = 'Content-Type, ngrok-skip-browser-warning'
     return response
 
 
