@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="theme-color" content="#1a1a1a">
+    <title>Portals Gifts Monitor</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script>
+        (function(){
+            var m = /[?&]api=([^&]+)/.exec(location.search);
+            window.API_BASE = (m ? m[1].replace(/\/$/, '') : '');
+        })();
+    </script>
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+</head>
+<body>
+    <svg style="display: none">
+        <filter id="glass-distortion" x="0%" y="0%" width="100%" height="100%" filterUnits="objectBoundingBox">
+            <feTurbulence type="fractalNoise" baseFrequency="0.001 0.005" numOctaves="1" seed="17" result="turbulence" />
+            <feComponentTransfer in="turbulence" result="mapped">
+                <feFuncR type="gamma" amplitude="1" exponent="10" offset="0.5" />
+                <feFuncG type="gamma" amplitude="0" exponent="1" offset="0" />
+                <feFuncB type="gamma" amplitude="0" exponent="1" offset="0.5" />
+            </feComponentTransfer>
+            <feGaussianBlur in="turbulence" stdDeviation="3" result="softMap" />
+            <feSpecularLighting in="softMap" surfaceScale="5" specularConstant="1" specularExponent="100" lighting-color="white" result="specLight">
+                <fePointLight x="-200" y="-200" z="300" />
+            </feSpecularLighting>
+            <feComposite in="specLight" operator="arithmetic" k1="0" k2="1" k3="1" k4="0" result="litImage" />
+            <feDisplacementMap in="SourceGraphic" in2="softMap" scale="150" xChannelSelector="R" yChannelSelector="G" />
+        </filter>
+    </svg>
+    <canvas id="bgCanvas"></canvas>
+    <div class="liquid-overlay"></div>
+
+    <header class="top-header">
+        <div class="header-content">
+            <div class="header-controls-left">
+                <div class="filters-bar">
+                    <button id="filterMarketplaces" class="filter-btn filter-btn-icon" title="Маркетплейсы"><span class="material-symbols-outlined">store</span></button>
+                    <button id="filterCollections" class="filter-btn filter-btn-textual" title="Коллекции">
+                        <span class="material-symbols-outlined">collections</span>
+                        <span class="filter-btn-text">Коллекции</span>
+                        <span class="filter-btn-count" id="collectionsCount">0</span>
+                    </button>
+                    <button id="filterModels" class="filter-btn filter-btn-textual" title="Модели">
+                        <span class="material-symbols-outlined">category</span>
+                        <span class="filter-btn-text">Модели</span>
+                        <span class="filter-btn-count" id="modelsCount">0</span>
+                    </button>
+                    <button id="filterBackgrounds" class="filter-btn filter-btn-icon" title="Фоны"><span class="material-symbols-outlined">image</span></button>
+                    <button id="filterSort" class="filter-btn filter-btn-icon" title="Сортировка"><span class="material-symbols-outlined">sort</span></button>
+                    <div class="price-filter-bar" title="Диапазон цены">
+                        <span class="material-symbols-outlined">attach_money</span>
+                        <div class="price-values">
+                            <span id="minPriceValue">0</span><span class="price-sep">—</span><span id="maxPriceValue">10000</span>
+                        </div>
+                        <div class="range-inputs price-range-inputs">
+                            <div class="range-track"><div id="rangeTrackActive" class="range-track-active"></div></div>
+                            <input type="range" id="minPrice" class="range-min" min="0" max="10000" step="0.01" value="0">
+                            <input type="range" id="maxPrice" class="range-max" min="0" max="10000" step="0.01" value="10000">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-controls-center">
+                <button id="monitoringToggleBtn" class="monitoring-btn-extended" title="Мониторинг">
+                    <span class="material-symbols-outlined">play_circle</span>
+                    <span class="monitoring-btn-text">Мониторинг</span>
+                    <input type="checkbox" id="monitoringToggle" style="display: none;">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div id="filtersPanel" class="filters-panel">
+        <div class="filters-panel-content">
+            <div class="filters-header">
+                <h2><span class="material-symbols-outlined">filter_list</span> Фильтры</h2>
+                <button id="closeFilters" class="close-btn"><span class="material-symbols-outlined">close</span></button>
+            </div>
+            <div class="filters-body">
+                <div class="filter-group" data-filter-group="marketplaces">
+                    <label class="filter-label"><span class="material-symbols-outlined">store</span> Маркетплейсы</label>
+                    <div class="marketplace-toggles">
+                        <label class="marketplace-toggle"><input type="checkbox" class="marketplace-checkbox" value="portals" checked><span class="toggle-slider"></span><span class="toggle-label">Portals</span></label>
+                        <label class="marketplace-toggle"><input type="checkbox" class="marketplace-checkbox" value="tonnel" checked><span class="toggle-slider"></span><span class="toggle-label">Tonnel</span></label>
+                        <label class="marketplace-toggle"><input type="checkbox" class="marketplace-checkbox" value="mrkt" checked><span class="toggle-slider"></span><span class="toggle-label">MRKT</span></label>
+                        <label class="marketplace-toggle"><input type="checkbox" class="marketplace-checkbox" value="getgems" checked><span class="toggle-slider"></span><span class="toggle-label">GetGems</span></label>
+                    </div>
+                </div>
+                <div class="filter-group" data-filter-group="collections">
+                    <label class="filter-label"><span class="material-symbols-outlined">collections</span> Коллекции</label>
+                    <div class="chip-input">
+                        <div id="collectionsTags" class="chip-list"></div>
+                        <button id="selectCollections" class="chip-button" type="button"><span class="material-symbols-outlined">add</span> Выбрать</button>
+                    </div>
+                    <input type="hidden" id="collections" value="">
+                </div>
+                <div class="filter-group" data-filter-group="models">
+                    <label class="filter-label"><span class="material-symbols-outlined">category</span> Модели</label>
+                    <div class="chip-input">
+                        <div id="modelsTags" class="chip-list"></div>
+                        <button id="selectModels" class="chip-button" type="button"><span class="material-symbols-outlined">add</span> Выбрать</button>
+                    </div>
+                    <input type="hidden" id="models" value="">
+                </div>
+                <div class="filter-group" data-filter-group="backgrounds">
+                    <label class="filter-label" for="backgrounds"><span class="material-symbols-outlined">image</span> Фоны (через запятую)</label>
+                    <input type="text" id="backgrounds" placeholder="Например: Hunter Green, Indigo Dye">
+                </div>
+                <div class="filter-group" data-filter-group="sort">
+                    <label class="filter-label" for="sort"><span class="material-symbols-outlined">sort</span> Сортировка</label>
+                    <select id="sort">
+                        <option value="latest">Latest</option>
+                        <option value="price_asc">Price: Low to High</option>
+                        <option value="price_desc">Price: High to Low</option>
+                        <option value="gift_id_asc">Gift ID: Ascending</option>
+                        <option value="gift_id_desc">Gift ID: Descending</option>
+                        <option value="model_rarity_asc">Model rarity: Ascending</option>
+                        <option value="model_rarity_desc">Model rarity: Descending</option>
+                    </select>
+                </div>
+            </div>
+            <div class="filters-footer">
+                <button id="clearFilters" class="btn btn-secondary"><span class="material-symbols-outlined">clear_all</span> Очистить</button>
+            </div>
+        </div>
+    </div>
+
+    <main class="main-content">
+        <div class="gifts-header">
+            <h2><span class="material-symbols-outlined">inventory_2</span> Подарки</h2>
+            <span id="giftsCount" class="gifts-count">0 подарков</span>
+        </div>
+        <div id="giftsGrid" class="gifts-grid">
+            <div class="empty-state">
+                <span class="material-symbols-outlined">inbox</span>
+                <p>Включите мониторинг, чтобы начать получать подарки</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
