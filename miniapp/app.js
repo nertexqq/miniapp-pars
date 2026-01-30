@@ -84,10 +84,12 @@ function openFilterPanel(filterType, anchorEl) {
     if (!filtersPanel) return;
     positionFilterPanel(anchorEl);
 
-    /* В Mini App показываем все разделы сразу (Коллекции + Модели + остальное), чтобы был виден «выбор подарков» */
     Object.values(filterGroups).forEach(group => {
-        if (group) group.style.display = 'flex';
+        if (group) group.style.display = 'none';
     });
+    if (filterGroups[filterType]) {
+        filterGroups[filterType].style.display = 'flex';
+    }
 
     Object.values(filterButtons).forEach(btn => {
         if (btn) btn.classList.remove('active');
