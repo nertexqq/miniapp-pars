@@ -3079,6 +3079,23 @@ svg.liquid-filters {
     }
 }
 
+/* Панель фильтров: все разделы видны, прокрутка по вертикали */
+.filters-body {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    overflow-y: auto;
+    max-height: 60vh;
+    -webkit-overflow-scrolling: touch;
+}
+
+.filters-body .filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
 /* Mini App / узкий экран: фильтры всегда видны, горизонтальный скролл */
 @media (max-width: 900px) {
     .top-header {
