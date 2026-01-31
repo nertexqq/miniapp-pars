@@ -18,7 +18,14 @@ if (window.Telegram && window.Telegram.WebApp) {
     }
 }
 // WebSocket: connect to API origin
-const socket = io(API_BASE || window.location.origin, { path: '/socket.io' });
+const socketOptions = { 
+    path: '/socket.io',
+    extraHeaders: {}
+};
+if (API_BASE && API_BASE.includes('ngrok')) {
+    socketOptions.extraHeaders['ngrok-skip-browser-warning'] = 'true';
+}
+const socket = io(API_BASE || window.location.origin, socketOptions);
 let monitoringEnabled = false;
 let giftsCount = 0;
 
