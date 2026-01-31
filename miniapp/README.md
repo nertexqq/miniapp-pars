@@ -1,52 +1,68 @@
 # Portals Gifts — Telegram Mini App
 
-Веб-приложение мониторинга подарков, открывается внутри Telegram как Mini App.
+Веб-приложение мониторинга подарков Portals, Tonnel, MRKT и GetGems.
 
-## Деплой через GitHub Pages
+## Быстрый запуск
 
-1. **Включите GitHub Pages** в репозитории:
-   - Settings → Pages → **Source**: **GitHub Actions**
+### Локально (для разработки)
+```bash
+cd miniapp
+python server.py
+```
+Откройте в браузере: `http://localhost:5001`
 
-2. **Запустите деплой**:
-   - При пуше в ветку `main` или `master` workflow автоматически задеплоит miniapp.
-   - Или вручную: Actions → "Deploy Mini App to GitHub Pages" → Run workflow.
+### Через ngrok (для Telegram Mini App)
+```bash
+# Если сервер уже запущен
+ngrok http 5001
 
-3. **URL приложения** будет таким:
-   ```
-   https://<USERNAME>.github.io/<REPO>/
-   ```
-   Например: `https://mtvej.github.io/portals_gifts_bot/`
-
-## Подключение к боту
-
-В `.env` бота укажите URL Mini App (без слэша в конце):
-
-```env
-MINIAPP_URL=https://YOUR_USERNAME.github.io/portals_gifts_bot
+# Используйте URL:
+https://nertexqq.github.io/miniapp-pars/?api=https://YOUR_NGROK_URL
 ```
 
-В главном меню бота появится кнопка **«📱 Мониторинг подарков»**, открывающая Mini App.
+## Архитектура
 
-## Бэкенд API
+- **Фронтенд**: `app.js`, `index.html`, `style.css` (Flask раздаёт статику)
+- **Бэкенд**: `server.py` — Flask + Socket.IO для парсинга и реал-тайм обновлений
+- **Интеграция маркетплейсов**: Portals, Tonnel, MRKT, GetGems
 
-Mini App обращается к API GUI (Flask-сервер из папки `gui/`):
+## API Endpoints
 
-- **Если miniapp и API на одном домене** — ничего настраивать не нужно (API_BASE пустой).
-- **Если miniapp на GitHub Pages, а API на своём сервере** — открывайте Mini App с параметром `api`:
-  ```
-  https://YOUR_USER.github.io/portals_gifts_bot/?api=https://your-backend.com
-  ```
-  Либо настройте в BotFather Menu Button URL с этим параметром.
+- `GET /api/status` — статус мониторинга
+- `GET /api/gifts` — последние подарки (список)
+- `GET /api/filters` — текущие фильтры
+- `POST /api/filters` — обновить фильтры (маркетплейсы, коллекции, модели, цена)
+- `POST /api/toggle` — включить/выключить мониторинг
+- `GET /api/suggestions?type=collection` — список коллекций
+- `GET /api/suggestions?type=model&collections=Col1,Col2` — модели по коллекциям
 
-Бэкенд должен быть доступен по HTTPS и отдавать CORS (в `gui/server.py` уже добавлены заголовки CORS).
+## WebSocket события
 
-## Локальная проверка
+- `connect` / `disconnect` — подключение клиента
+- `new_gift` — новый подарок найден (broadcast)
 
-1. Запустите GUI-сервер: `python gui/server.py` (порт 5000).
-2. Откройте в браузере: `http://localhost:5000/miniapp/index.html` или раздайте папку `miniapp/` любым статическим сервером и откройте `index.html`.
-3. Для проверки в Telegram: используйте [@BotFather](https://t.me/BotFather) → Bot Settings → Menu Button → Configure menu button → укажите URL (для теста можно ngrok на `miniapp/` или на весь GUI).
+## Переменные окружения (.env)
 
-## Файлы
+```env
+PORTALS_AUTH=tma ...
+TONNEL_AUTH=user=...
+MRKT_AUTH=...
+GETGEMS_API_KEY=...
+CHECK_INTERVAL=60
+FLOOR_CACHE_TTL=300
+```
+
+## Деплой GitHub Pages + ngrok
+
+1. GitHub Pages: `https://nertexqq.github.io/miniapp-pars/`
+2. Сервер на ngrok: `https://YOUR_NGROK.ngrok-free.app`
+3. Откройте: `https://nertexqq.github.io/miniapp-pars/?api=https://YOUR_NGROK.ngrok-free.app`
+
+## Требования
+
+- Python 3.8+
+- Flask, Flask-SocketIO, eventlet
+- Маркетплейс API (обёртки: portalsmp, tonnelmp_wrapper, mrktmp_wrapper, getgems_wrapper)
 
 - `index.html` — разметка и подключение Telegram Web App SDK.
 - `app.js` — логика: API_BASE из `?api=`, тема Telegram, запросы к API.
